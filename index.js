@@ -1,6 +1,20 @@
+
 function hasTargetSum(array, target) {
-  // Write your algorithm here
+  const arr = [22, 19, 4, 6, 30];
+  const tar = 25;
+  
+   for (let i = 0; i < array.length; i++) {
+      for (let j = i + 1; j < array.length; j++) {
+         if (array[i] + array[j] === target) {
+            return true;
+         }
+      }
+   }
+   return false;
 }
+
+  
+
 
 /* 
   Write the Big O time complexity of your function here
